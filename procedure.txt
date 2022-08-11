@@ -1,0 +1,27 @@
+List of Components 
+
+Shared Components 
+
+- Buttons 
+- NavBar
+- Footer 
+
+Home Components 
+
+
+Features Components
+
+
+Story Components 
+
+
+Pricing Components 
+
+
+Investierte Zeit :
+
+Tag 1
+
+- übernahme design System in CSS files 
+- erstellen von Button Component
+- 

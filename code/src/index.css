@@ -47,6 +47,7 @@
 
 h1, h2, h3, h4{
     font-weight: var(--font-weight-bold);
+    width: fit-content;
 }
 
 h1{

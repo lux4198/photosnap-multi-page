@@ -1,7 +1,10 @@
 import { useState } from 'react'
 import './App.css'
 
-import {ButtonType1, ButtonType2} from '../src/components/buttons.jsx'
+/* components */
+
+import {ButtonType1, ButtonType2} from './components/shared/buttons.jsx'
+import Footer from './components/shared/footer'
 
 function App() {
 
@@ -10,6 +13,7 @@ function App() {
       <h1>hello there</h1>
       <ButtonType1 text = 'BUTTON 1' dark = {true}/>
       <ButtonType2 text = 'BUTTON 2' dark = {false} />
+      <Footer/>
     </div>
   )
 }
