@@ -1,5 +1,80 @@
+/* Define CSS variables and global styles */
+
+:root{
+    /* colors */
+
+    --col-main-black : rgb(0, 0, 0); 
+    --col-main-white :  rgb(255, 255, 255); 
+    --col-main-lightgrey : rgb(223, 223, 223); 
+
+    --col-accent-orange : rgb(255, 197, 147); 
+    --col-accent-purple : rgb(188, 113, 152); 
+    --col-accent-blue : rgb(90, 119, 255); 
+
+    /* Typography */
+
+    --font-family : DM Sans; 
+    
+    --font-weight-bold : 700 ;
+    --font-weight-regular : 500; 
+
+    --font-size-p : 15px; 
+    --font-size-h1 : 40px; 
+    --font-size-h2 : 25px; 
+    --font-size-h3 : 18px; 
+    --font-size-h4 : 12px;
+
+    --font-size-btn : 12px; 
+    
+    --font-lh-p : 25px; 
+    --font-lh-h1: 48px;
+    --font-lh-h2: 25px; 
+    --font-lh-h3: 25px; 
+    --font-lh-h4: 16px; 
+
+    --font-ls-h1 : 4.17px; 
+    --font-ls-h2 : 0px; 
+    --font-ls-h3 : 0px; 
+    --font-ls-h4 : 2px; 
+    --font-ls-btn: 2px; 
+
+    /* global settings */
+
+    font-family: var(--font-family);
+    font-size: var(--font-size-p);
+}
 
 
+h1, h2, h3, h4{
+    font-weight: var(--font-weight-bold);
+}
+
+h1{
+    font-size: var(--font-size-h1);
+    line-height: var(--font-lh-h1);
+    letter-spacing: var(--font-ls-h1);
+}
+
+h2{
+    font-size: var(--font-size-h2);
+    line-height: var(--font-lh-h2);
+    letter-spacing: var(--font-ls-h2);
+
+}
+
+h3{
+    font-size: var(--font-size-h3);
+    line-height: var(--font-lh-h3);
+    letter-spacing: var(--font-ls-h3);
+
+}
+
+h4{
+    font-size: var(--font-size-h4);
+    line-height: var(--font-lh-h4);
+    letter-spacing: var(--font-ls-h4);
+
+}
 
 /* CSS Reset */
 
