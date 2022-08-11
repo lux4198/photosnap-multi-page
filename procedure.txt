@@ -20,8 +20,8 @@ Pricing Components
 
 Investierte Zeit :
 
-Tag 1
+Tag 1 ~ 5-6 std
 
 - übernahme design System in CSS files 
 - erstellen von Button Component
-- 
+- erstellen von footer component 

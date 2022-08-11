@@ -8,9 +8,9 @@ const arrow = () => {
 }
 export function ButtonType1(props) {
     return (
-        <div class = {props.dark? 'button-type-1 button-dark' : 'button-type-1 button-light'}>
-            <h4>{props.text}</h4>
-        </div>
+            <div class = {props.dark? 'button-type-1 button-dark' : 'button-type-1 button-light'}>
+                <h4>{props.text}</h4>
+            </div>
     )
 }
 

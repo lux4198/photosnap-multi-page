@@ -5,14 +5,14 @@ import './App.css'
 
 import {ButtonType1, ButtonType2} from './components/shared/buttons.jsx'
 import Footer from './components/shared/footer'
+import Navbar from './components/shared/navbar'
 
 function App() {
 
   return (
     <div class = "App">
-      <h1>hello there</h1>
-      <ButtonType1 text = 'BUTTON 1' dark = {true}/>
-      <ButtonType2 text = 'BUTTON 2' dark = {false} />
+      <Navbar/>
+      <h1>hello</h1>
       <Footer/>
     </div>
   )

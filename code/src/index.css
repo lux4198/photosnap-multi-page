@@ -34,7 +34,7 @@
 
     --font-ls-h1 : 4.17px; 
     --font-ls-h2 : 0px; 
-    --font-ls-h3 : 0px; 
+    --font-ls-h3 : 1px; 
     --font-ls-h4 : 2px; 
     --font-ls-btn: 2px; 
 
@@ -44,6 +44,9 @@
     font-size: var(--font-size-p);
 }
 
+body{
+  background-color: rosybrown;
+}
 
 h1, h2, h3, h4{
     font-weight: var(--font-weight-bold);

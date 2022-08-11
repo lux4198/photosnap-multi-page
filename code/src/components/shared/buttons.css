@@ -1,8 +1,11 @@
 .button-type-1{
     padding: 1em 3em 1em 3em;
-    max-width: fit-content;
+    max-height: 40px;
     transition: 200ms all ease;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button-type-1:hover{

@@ -5,10 +5,11 @@
     background-color: black;
     position: absolute;
     bottom: 0;
+    top: 100vh;
 }
 
 .footer-items-grid{
-    max-width: 1800px;
+    max-width: 1200px;
     margin: auto;
     padding: 3em 6em;
     display: grid; 
