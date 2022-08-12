@@ -1,5 +1,6 @@
 import React from 'react'
 import './navbar.css'
+import { Link } from 'react-router-dom'
 
 /* icons  */
 
@@ -29,17 +30,23 @@ import { useState } from 'react'
 
 function Navbar() {
 
-    const [menuCollapse, setMenuCollapse] = useState(false)
+    const [menuCollapse, setMenuCollapse] = useState(true)
     return (
         <nav>
             <div class = {`nav-wrap ${menuCollapse? '' : 'nav-wrap-overlay'}`}>
                 <div class = 'nav-logo'>
-                    {logo()}
+                    <Link to = '/'>{logo()}</Link>
                 </div>
                 <div class = {`nav-items-wrap ${menuCollapse? 'nav-menu-drop' : ''}`}>
-                    <h3>STORIES</h3>
-                    <h3>FEATURES</h3>
-                    <h3>PRICING</h3>
+                    <Link to = '/stories'>
+                        <h3>STORIES</h3>
+                    </Link>
+                    <Link to = '/features'>
+                        <h3>FEATURES</h3>
+                    </Link>
+                    <Link to = '/pricing'>
+                        <h3>PRICING</h3>
+                    </Link>
                 </div>
                 <div class = {`nav-call-to-action ${menuCollapse? 'nav-menu-drop' : ''}`} >
                     <ButtonType1 text = {'GET AN INVITE'} dark = {true}/>
