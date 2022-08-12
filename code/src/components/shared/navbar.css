@@ -34,13 +34,27 @@
         justify-content: space-between;
         flex-direction: column;
         padding: 2em;
+        position: relative;
 
+    }
+
+    /* creates see through overlay on rest of page */
+
+    .nav-wrap-overlay::after{
+        position: absolute;
+        content: '';
+        background-color: rgba(0, 0, 0, 0.463);
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        z-index: -1;
     }
 
     .nav-items-wrap{
         flex-direction: column;
         align-items: center;
         padding: 3em 0;
+        position: relative;
     }
 
     .nav-items-wrap h3{

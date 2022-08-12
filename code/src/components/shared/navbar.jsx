@@ -32,7 +32,7 @@ function Navbar() {
     const [menuCollapse, setMenuCollapse] = useState(false)
     return (
         <nav>
-            <div class = 'nav-wrap'>
+            <div class = {`nav-wrap ${menuCollapse? '' : 'nav-wrap-overlay'}`}>
                 <div class = 'nav-logo'>
                     {logo()}
                 </div>
