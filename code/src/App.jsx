@@ -1,8 +1,10 @@
 import { useState } from 'react'
-import {BrowserRouter as Router,
+import { BrowserRouter as Router,
         Routes, 
         Route, 
-        Link} from 'react-router-dom'
+        Link, 
+        useLocation} from 'react-router-dom'
+import { AnimatePresence} from 'framer-motion'
 import './App.css'
 
 /* components */
@@ -15,21 +17,25 @@ import {ButtonType1, ButtonType2} from './components/shared/buttons.jsx'
 import Footer from './components/shared/footer'
 import Navbar from './components/shared/navbar'
 
+
+
+
 function App() {
+  const location = useLocation()
 
   return (
-    <Router>
-      <div class = "App">
-        <Navbar/>
-        <Routes>
+    <div class = "App">
+      <Navbar/>
+      <AnimatePresence exitBeforeEnter>
+        <Routes location={location} key = {location.pathname}>
           <Route exact path='/' element = {<Home/>}></Route>
           <Route exact path='/stories' element = {<Stories/>}></Route>
           <Route exact path='/features' element = {<Features/>}></Route>
           <Route exact path='/pricing' element = {<Pricing/>}></Route>
         </Routes>
-        <Footer/>
-      </div>
-    </Router>
+      </AnimatePresence>
+      <Footer/>
+    </div>
   )
 }
 

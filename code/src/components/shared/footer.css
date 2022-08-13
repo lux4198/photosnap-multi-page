@@ -4,8 +4,7 @@
     min-height: 20vh;
     background-color: black;
     position: absolute;
-    bottom: 0;
-    top: 100vh;
+    bottom: -100vh;
 }
 
 .footer-items-grid{

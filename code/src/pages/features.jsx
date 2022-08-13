@@ -1,8 +1,13 @@
 import React from 'react'
+import { AnimatePresence, motion } from 'framer-motion'
 
 function Features() {
     return (
-        <h1>Features</h1>
+        <motion.div >
+            <div id = 'Features'>
+                <h1>Features</h1>
+            </div>
+        </motion.div>
     )
 }
 

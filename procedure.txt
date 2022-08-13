@@ -28,6 +28,10 @@ Tag 1 ~ 7-8 std
 - erstellen von navbar component 
 
 
-Tag 2
+Tag 2 ~ 6 std
 
-- 
+- erstellen von Routes und framer motion
+- erstellen von hero section für desktop und tablet
+
+
+Tag 3 ~ 

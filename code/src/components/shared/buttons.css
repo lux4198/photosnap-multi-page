@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-transform: uppercase;
 }
 
 .button-type-1:hover{
@@ -19,6 +20,7 @@
     max-width: fit-content;
     transition: 200ms all ease;
     cursor: pointer;
+    text-transform: uppercase;
 
     /* this makes sure the button doesn't have a background without needing an extra class */
     background-color: transparent !important;
