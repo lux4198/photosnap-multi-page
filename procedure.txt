@@ -34,4 +34,6 @@ Tag 2 ~ 6 std
 - erstellen von hero section für desktop und tablet
 
 
-Tag 3 ~ 
+Tag 3 ~ 1std
+
+- fertig stellen hero section home mobile

@@ -46,7 +46,7 @@ function Home() {
                 return 0
             }
         }
-
+                                
     return (
             <motion.div  exit = {{opacity : 0, y : -50}} >
                 <div id = 'Home'>

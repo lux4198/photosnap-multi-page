@@ -26,14 +26,16 @@ function App() {
   return (
     <div class = "App">
       <Navbar/>
-      <AnimatePresence exitBeforeEnter>
-        <Routes location={location} key = {location.pathname}>
-          <Route exact path='/' element = {<Home/>}></Route>
-          <Route exact path='/stories' element = {<Stories/>}></Route>
-          <Route exact path='/features' element = {<Features/>}></Route>
-          <Route exact path='/pricing' element = {<Pricing/>}></Route>
-        </Routes>
-      </AnimatePresence>
+      <div class = 'main-content'>
+        <AnimatePresence exitBeforeEnter>
+          <Routes location={location} key = {location.pathname}>
+            <Route exact path='/' element = {<Home/>}></Route>
+            <Route exact path='/stories' element = {<Stories/>}></Route>
+            <Route exact path='/features' element = {<Features/>}></Route>
+            <Route exact path='/pricing' element = {<Pricing/>}></Route>
+          </Routes>
+        </AnimatePresence>
+      </div>
       <Footer/>
     </div>
   )

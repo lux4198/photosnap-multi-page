@@ -61,12 +61,12 @@
     .hero-wrap-1, .hero-wrap-2{
         display: flex;
         flex-direction: column;
-        min-height: 90vh;
+        min-height: 70vh;
     }
 
     .hero-image{
         order: 1;
-        min-height: 30vh;
+        min-height: 280px;
     }
 
     .hero-text-wrap{

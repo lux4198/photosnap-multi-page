@@ -31,6 +31,9 @@
 
 @media only screen and (max-width : 750px){
     .nav-wrap{
+        position: absolute;
+        top: -82px;
+        z-index: 2;
         justify-content: space-between;
         flex-direction: column;
         padding: 2em;
@@ -42,9 +45,9 @@
         position: absolute;
         content: '';
         background-color: rgba(0, 0, 0, 0.463);
-        height: 100vh;
+        height: 300vh;
         width: 100%;
-        top: 60vh;
+        top: 62vh;
         z-index: 2;
     }
 
