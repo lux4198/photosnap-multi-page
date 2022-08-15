@@ -6,11 +6,14 @@ import './home.css'
 
 import HeroElement from '../components/home/heroElement.jsx'
 import StoryPreview from '../components/shared/storyPreview.jsx'
+import InfoCard from '../components/shared/infoCard'
+
 
 
 /* text */
 
-import {heroTextTitles, heroTextDetails, ButtonText1, ButtonText2} from '../assets/text'
+import {heroTextTitles, heroTextDetails, ButtonText1, ButtonText2, infoTextTitles, infoTextDetails} from '../assets/text'
+
 
 /* images */
 
@@ -36,6 +39,14 @@ import mountainsMobile from '../assets/stories/mobile/mountains.jpg'
 import cityscapesMobile from '../assets/stories/mobile/cityscapes.jpg'
 import voyageMobile from '../assets/stories/mobile/18-days-voyage.jpg'
 import architecturalsMobile from '../assets/stories/mobile/architecturals.jpg'
+
+
+
+/* icons */
+
+import responsive from '../assets/features/desktop/responsive.svg'
+import noLimit from '../assets/features/desktop/no-limit.svg'
+import embed from '../assets/features/desktop/embed.svg'
 
 
 
@@ -114,6 +125,11 @@ function Home() {
                         <StoryPreview  storyTitle = {coverStories.storyTitle[1]} storyAuthor = {coverStories.storyAuthor[1]}  storyImage = {coverStories.storyImage[/* mobileImage() */0][1]}/>
                         <StoryPreview  storyTitle = {coverStories.storyTitle[2]} storyAuthor = {coverStories.storyAuthor[2]}  storyImage = {coverStories.storyImage[/* mobileImage() */0][2]}/>
                         <StoryPreview  storyTitle = {coverStories.storyTitle[3]} storyAuthor = {coverStories.storyAuthor[3]}  storyImage = {coverStories.storyImage[/* mobileImage() */0][3]}/>
+                    </div>
+                    <div class = 'info-card-section-wrap'>
+                        <InfoCard infoIcon = {responsive} infoTitle = {infoTextTitles[0]} infoDetails = {infoTextDetails[0]}/>
+                        <InfoCard infoIcon = {noLimit} infoTitle = {infoTextTitles[1]} infoDetails = {infoTextDetails[1]}/>
+                        <InfoCard infoIcon = {embed} infoTitle = {infoTextTitles[2]} infoDetails = {infoTextDetails[2]}/>
                     </div>
                 </div>
             </motion.div>

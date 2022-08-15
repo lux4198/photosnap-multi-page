@@ -45,7 +45,7 @@
 }
 
 body{
-  background-color: rosybrown;
+  background-color: var(--col-main-white);
 }
 
 h1, h2, h3, h4{

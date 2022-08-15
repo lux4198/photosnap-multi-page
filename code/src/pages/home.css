@@ -12,6 +12,16 @@
     max-height: 375px;
 }
 
+.info-card-section-wrap{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+
 
 @media only screen and (min-width : 900px) {
     .cover-stories-wrap > *{

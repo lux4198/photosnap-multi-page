@@ -11,3 +11,15 @@ export const ButtonText2 = 'View the stories'
 
 export const heroTextTitles = [heroTextTile1, heroTextTile2, heroTextTile3]
 export const heroTextDetails = [heroTextDetails1, heroTextDetails2, heroTextDetails3]
+
+
+const infoTextDetail1 = 'No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen.'
+const infoTextDetail2 = 'Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go.'
+const infoTextDetail3 = 'Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more. '
+
+const infoTextTitle1 = '100% Responsive'
+const infoTextTitle2 = 'No Photo Upload Limit'
+const infoTextTitle3 = 'Available to Embed'
+
+export const infoTextTitles = [infoTextTitle1, infoTextTitle2, infoTextTitle3]
+export const infoTextDetails = [infoTextDetail1, infoTextDetail2, infoTextDetail3]
