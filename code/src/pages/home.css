@@ -1,0 +1,21 @@
+.cover-stories-wrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover-stories-wrap > *{
+    flex : 2;
+    min-width: 300px;
+    max-height: 375px;
+}
+
+
+@media only screen and (min-width : 900px) {
+    .cover-stories-wrap > *{
+        max-width: 500px;
+        max-height: inherit; 
+    };
+}

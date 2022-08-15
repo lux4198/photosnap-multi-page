@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: 3fr 2fr;
     min-height: 650px;
-    z-index: -2;
+    z-index: 1;
     position: relative;
 }
 
@@ -73,4 +73,11 @@
         order: 2;
         padding: 4em 1em;
         }
+}
+
+
+@media only screen and (min-width : 1600px){
+    .hero-wrap-1, .hero-wrap-2{
+        min-height: 800px;
+    }
 }

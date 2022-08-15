@@ -1,9 +1,12 @@
 import React from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
+import './home.css'
 
 /* components  */
 
 import HeroElement from '../components/home/heroElement.jsx'
+import StoryPreview from '../components/shared/storyPreview.jsx'
+
 
 /* text */
 
@@ -24,6 +27,19 @@ import heroImageMobile2 from '../assets/home/mobile/beautiful-stories.jpg'
 import heroImageMobile3 from '../assets/home/mobile/designed-for-everyone.jpg'
 
 
+import mountainsDesktop from '../assets/stories/desktop/mountains.jpg'
+import cityscapesDesktop from '../assets/stories/desktop/cityscapes.jpg'
+import voyageDesktop from '../assets/stories/desktop/18-days-voyage.jpg'
+import architecturalsDesktop from '../assets/stories/desktop/architecturals.jpg'
+
+import mountainsMobile from '../assets/stories/mobile/mountains.jpg'
+import cityscapesMobile from '../assets/stories/mobile/cityscapes.jpg'
+import voyageMobile from '../assets/stories/mobile/18-days-voyage.jpg'
+import architecturalsMobile from '../assets/stories/mobile/architecturals.jpg'
+
+
+
+
 
 function Home() {
 
@@ -32,6 +48,29 @@ function Home() {
     const heroImagesMobile = [heroImageMobile1, heroImageMobile2, heroImageMobile3 ]
 
     const heroImageCycle = [heroImagesDesktop, heroImagesTablet, heroImagesMobile]
+
+    const storyImagesDesktop = [mountainsDesktop, cityscapesDesktop, voyageDesktop, architecturalsDesktop]
+    const storyImagesMobile = [mountainsMobile, cityscapesMobile, voyageMobile, architecturalsMobile]
+
+    const coverStories = {
+        storyTitle : [  'The Mountains',
+            'Sunset Cityscapes',
+            '18 Days Voyage',
+            'Architecturals'
+          ],
+
+        storyAuthor : [ 
+            'by John Appleseed',
+            'by Benjamin Cruz',
+            'by Alexei Borodin',
+            'by Samantha Brooke'
+        ], 
+
+        storyImage : [
+            storyImagesDesktop, 
+            storyImagesMobile
+        ]
+    }
 
     /* determines set of images depending of viewport*/
     const heroImage = () => {
@@ -46,9 +85,19 @@ function Home() {
                 return 0
             }
         }
+
+    const mobileImage = () => {
+        const width = window.innerWidth
+            if(width < 600){
+                return 1
+        }
+            else {
+                return 0
+            }
+        }
                                 
     return (
-            <motion.div  exit = {{opacity : 0, y : -50}} >
+            <motion.div  exit = {{opacity : 0}} >
                 <div id = 'Home'>
                     <HeroElement  type = {'1'} heroTextTitle = {heroTextTitles[0]} heroTextDetail = {heroTextDetails[0]}
                                     ButtonText = {ButtonText1} backgroundColor = {'black'}
@@ -59,6 +108,13 @@ function Home() {
                     <HeroElement type = {'1'} heroTextTitle = {heroTextTitles[2]} heroTextDetail = {heroTextDetails[2]}
                                     ButtonText = {ButtonText2} backgroundColor = {'white'}
                                     backgroundImage = {heroImageCycle[heroImage()][2]}/>
+
+                    <div class = 'cover-stories-wrap'>
+                        <StoryPreview  storyTitle = {coverStories.storyTitle[0]} storyAuthor = {coverStories.storyAuthor[0]}  storyImage = {coverStories.storyImage[/* mobileImage() */0][0]}/>
+                        <StoryPreview  storyTitle = {coverStories.storyTitle[1]} storyAuthor = {coverStories.storyAuthor[1]}  storyImage = {coverStories.storyImage[/* mobileImage() */0][1]}/>
+                        <StoryPreview  storyTitle = {coverStories.storyTitle[2]} storyAuthor = {coverStories.storyAuthor[2]}  storyImage = {coverStories.storyImage[/* mobileImage() */0][2]}/>
+                        <StoryPreview  storyTitle = {coverStories.storyTitle[3]} storyAuthor = {coverStories.storyAuthor[3]}  storyImage = {coverStories.storyImage[/* mobileImage() */0][3]}/>
+                    </div>
                 </div>
             </motion.div>
     )
