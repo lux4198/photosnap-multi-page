@@ -5,6 +5,8 @@ Shared Components
 - Buttons 
 - NavBar
 - Footer 
+- storyPreview
+- infoCard
 
 Home Components 
 
@@ -16,6 +18,12 @@ Story Components
 
 
 Pricing Components 
+
+
+dont forget: 
+
+- sitemap 
+- navbar nach transition schliessen
 
 
 Investierte Zeit :
@@ -37,3 +45,11 @@ Tag 2 ~ 6 std
 Tag 3 ~ 1std
 
 - fertig stellen hero section home mobile
+
+Tag 4 ~ 4std 
+
+- erstellen von Story preview und info cards 
+- fertigstellen home page
+
+Tag 5 ~ 
+

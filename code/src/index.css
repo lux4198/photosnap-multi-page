@@ -15,8 +15,8 @@
 
     --font-family : DM Sans; 
     
-    --font-weight-bold : 700 ;
-    --font-weight-regular : 500; 
+    --font-weight-bold : 500 ;
+    --font-weight-regular : 400; 
 
     --font-size-p : 15px; 
     --font-size-h1 : 40px; 
@@ -51,6 +51,7 @@ body{
 h1, h2, h3, h4{
     font-weight: var(--font-weight-bold);
     width: fit-content;
+    text-transform: capitalize;
 }
 
 h1{
