@@ -49,6 +49,16 @@
     padding: 0.5rem 0;
 }
 
+.story-story-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.story-story-wrap > *{
+    flex: 1 280px;
+}
+
 
 @media only screen and (max-width : 1000px){
     .story-hero-section{

@@ -121,10 +121,10 @@ function Home() {
                                     backgroundImage = {heroImageCycle[heroImage()][2]}/>
 
                     <div class = 'cover-stories-wrap'>
-                        <StoryPreview  storyTitle = {coverStories.storyTitle[0]} storyAuthor = {coverStories.storyAuthor[0]}  storyImage = {coverStories.storyImage[/* mobileImage() */0][0]}/>
-                        <StoryPreview  storyTitle = {coverStories.storyTitle[1]} storyAuthor = {coverStories.storyAuthor[1]}  storyImage = {coverStories.storyImage[/* mobileImage() */0][1]}/>
-                        <StoryPreview  storyTitle = {coverStories.storyTitle[2]} storyAuthor = {coverStories.storyAuthor[2]}  storyImage = {coverStories.storyImage[/* mobileImage() */0][2]}/>
-                        <StoryPreview  storyTitle = {coverStories.storyTitle[3]} storyAuthor = {coverStories.storyAuthor[3]}  storyImage = {coverStories.storyImage[/* mobileImage() */0][3]}/>
+                        <StoryPreview  title = {coverStories.storyTitle[0]} author = {coverStories.storyAuthor[0]}  image = {coverStories.storyImage[/* mobileImage() */0][0]}/>
+                        <StoryPreview  title = {coverStories.storyTitle[1]} author = {coverStories.storyAuthor[1]}  image = {coverStories.storyImage[/* mobileImage() */0][1]}/>
+                        <StoryPreview  title = {coverStories.storyTitle[2]} author = {coverStories.storyAuthor[2]}  image = {coverStories.storyImage[/* mobileImage() */0][2]}/>
+                        <StoryPreview  title = {coverStories.storyTitle[3]} author = {coverStories.storyAuthor[3]}  image = {coverStories.storyImage[/* mobileImage() */0][3]}/>
                     </div>
                     <div class = 'info-card-section-wrap'>
                         <InfoCard infoIcon = {responsive} infoTitle = {infoTextTitles[0]} infoDetails = {infoTextDetails[0]}/>

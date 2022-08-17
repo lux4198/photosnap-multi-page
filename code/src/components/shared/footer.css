@@ -3,8 +3,7 @@
     width: 100%;
     min-height: 20vh;
     background-color: black;
-    position: absolute;
-    bottom: -40vh;
+    position: static;
 }
 
 .footer-items-grid{
@@ -102,7 +101,6 @@
 @media only screen and (max-width : 600px){
     .footer-wrap{
         height: min(100vh, 700px);
-        bottom: -110vh;
     }
 
     .footer-items-grid{

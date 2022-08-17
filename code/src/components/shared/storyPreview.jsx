@@ -3,17 +3,17 @@ import './storyPreview.css'
 import {ButtonType2} from './buttons.jsx'
 
 function StoryPreview(props) {
-    const title = props.storyTitle
-    const author = props.storyAuthor
-    const image = props.storyImage
-    const date = props.storyDate
+    const title = props.title
+    const author = props.author
+    const image = props.image
+    const date = props.date
 
     return (
         <div class = 'story-wrap' style = {{'backgroundImage' : `url(${image})`}}>
             <div class = 'story-text' >
                 <p>{date}</p>
                 <h2>{title}</h2>
-                <p>{author}</p>
+                <p>by {author}</p>
             </div>
             <div class = 'story-button'>
                 <ButtonType2 text = 'READ STORY' dark = {true} />
