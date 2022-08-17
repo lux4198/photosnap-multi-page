@@ -4,6 +4,7 @@ import './footer.css'
 /* components */
 
 import { ButtonType2 } from './buttons.jsx'
+import { Link } from 'react-router-dom'
 
 /* images and icons */
 
@@ -60,7 +61,7 @@ function Footer() {
         <footer class = 'footer-wrap'>
             <div class = 'footer-items-grid'>
                 <div class = 'footer-title grid-item'>
-                    {logo()}
+                    <Link to = '/'>{logo()}</Link>
                 </div>
                 <div class = 'footer-icons grid-item'>
                     {iconFB()}
@@ -70,10 +71,18 @@ function Footer() {
                     {iconIG()}
                 </div>
                 <div class = 'footer-nav-items grid-item'>
-                    <h4>HOME</h4>
-                    <h4>STORIES</h4>
-                    <h4>FEATURES</h4>
-                    <h4>PRICING</h4>
+                    <Link to = '/'>
+                        <h4>HOME</h4>
+                    </Link>
+                    <Link to = '/stories'>
+                        <h4>STORIES</h4>
+                    </Link>
+                    <Link to = '/features'>
+                        <h4>FEATURES</h4>
+                    </Link>
+                    <Link to = '/pricing'>
+                        <h4>PRICING</h4>
+                    </Link>
                 </div>
                 <div class = 'footer-call-to-action grid-item'>
                     <ButtonType2 text = {'GET AN INVITE'} dark = {true}/>
