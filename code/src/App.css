@@ -1,8 +1,11 @@
 .App{
     position: relative;
-    overflow: hidden;
 }
 
+
+.main-content{
+    overflow: hidden;
+}
 
 @media only screen and (max-width : 750px){
     .main-content{
