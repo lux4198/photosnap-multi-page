@@ -1,6 +1,7 @@
 import React from 'react'
 import './hero-element.css'
 
+
 /* components */
 
 import {ButtonType2} from '../../components/shared/buttons'
