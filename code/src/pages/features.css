@@ -5,7 +5,7 @@
 
 .features-hero-section::after{
     content: '';
-    width: 0.5%;
+    width: 0.3%;
     height: 40%;
     background: linear-gradient(45deg, var(--col-accent-purple), var(--col-accent-blue));
     position: absolute;
@@ -46,6 +46,37 @@
 }
 
 
+.banner-beta{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    padding: 3em clamp(3em, 7vw, 10em);
+    background-image: url(../assets/shared/desktop/bg-beta.jpg);
+    background-size: cover;
+    color: var(--col-main-white);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-beta::after{
+    content: '';
+    width: 0.3%;
+    height: 100%;
+    background: linear-gradient(45deg, var(--col-accent-purple), var(--col-accent-blue));
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.banner-beta h1{
+    max-width: 300px;
+}
+
+
+
+
 @media only screen and (max-width : 700px){
     .features-hero-section::after{
         top: 280px;
@@ -53,5 +84,21 @@
         height: 0.5%;
         width: 40%;
         background: linear-gradient(45deg, var(--col-accent-blue), var(--col-accent-purple));
+    }
+
+    .banner-beta{
+        flex-direction: column;
+        padding: 3em;
+    }
+
+    .banner-beta::after{
+        height: 1.5%;
+        width: 40%;
+        left: 10%;
+        top: 0;
+    }
+
+    .banner-beta h1{
+        padding-bottom: 1em;
     }
 }

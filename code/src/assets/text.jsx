@@ -17,9 +17,17 @@ const infoTextDetail1 = 'No matter which the device you’re on, our site is ful
 const infoTextDetail2 = 'Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go.'
 const infoTextDetail3 = 'Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more. '
 
+const infoTextDetail4 = 'With Photosnap subscriptions you can host your stories on your own domain. You can also remove our branding!'
+const infoTextDetail5 = 'Users that viewed your story or gallery can easily get notifed of new and featured stories with our built in mailing list.'
+const infoTextDetail6 = 'Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to creating stories.'
+
 const infoTextTitle1 = '100% Responsive'
 const infoTextTitle2 = 'No Photo Upload Limit'
 const infoTextTitle3 = 'Available to Embed'
 
-export const infoTextTitles = [infoTextTitle1, infoTextTitle2, infoTextTitle3]
-export const infoTextDetails = [infoTextDetail1, infoTextDetail2, infoTextDetail3]
+const infoTextTitle4 = 'Custom Domain'
+const infoTextTitle5 = 'Boost Your Exposure'
+const infoTextTitle6 = 'Drag & Drop Image'
+
+export const infoTextTitles = [infoTextTitle1, infoTextTitle2, infoTextTitle3, infoTextTitle4, infoTextTitle5, infoTextTitle6]
+export const infoTextDetails = [infoTextDetail1, infoTextDetail2, infoTextDetail3, infoTextDetail4, infoTextDetail5, infoTextDetail6]

@@ -3,11 +3,13 @@ import { ButtonType2 } from '../components/shared/buttons'
 import StoryPreview from '../components/shared/storyPreview'
 import './stories.css'
 
+import { motion } from 'framer-motion'
+
 import { stories } from '../assets/stories/stories'
 
 function Stories() {
     return (
-        <div>
+        <motion.div  exit = {{opacity : 0}}>
             <div class = 'story-hero-section'>
                 <div class = 'story-hero-image-mobile'/>
                 <div class = 'story-hero-text-wrap'>
@@ -34,7 +36,7 @@ function Stories() {
                     })
                 }
             </div>
-        </div>
+        </motion.div>
 
     )
 }
