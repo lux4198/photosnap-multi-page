@@ -110,9 +110,11 @@ function Home() {
     return (
             <motion.div  exit = {{opacity : 0}} >
                 <div id = 'Home'>
-                    <HeroElement  type = {'1'} heroTextTitle = {heroTextTitles[0]} heroTextDetail = {heroTextDetails[0]}
-                                    ButtonText = {ButtonText1} backgroundColor = {'black'}
-                                    backgroundImage = {heroImageCycle[heroImage()][0]}/>
+                    <div class = 'home-hero-first'>
+                        <HeroElement  type = {'1'} heroTextTitle = {heroTextTitles[0]} heroTextDetail = {heroTextDetails[0]}
+                                        ButtonText = {ButtonText1} backgroundColor = {'black'}
+                                        backgroundImage = {heroImageCycle[heroImage()][0]}/>
+                    </div>
                     <HeroElement type = {'2'} heroTextTitle = {heroTextTitles[1]} heroTextDetail = {heroTextDetails[1]}
                                     ButtonText = {ButtonText2} backgroundColor = {'white'}
                                     backgroundImage = {heroImageCycle[heroImage()][1]}/>

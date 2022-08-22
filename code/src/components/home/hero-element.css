@@ -2,16 +2,12 @@
     display: grid;
     grid-template-columns: 2fr 3fr;
     min-height: 650px;
-    z-index: 1;
-    position: relative;
 }
 
 .hero-wrap-2{
     display: grid;
     grid-template-columns: 3fr 2fr;
     min-height: 650px;
-    z-index: 1;
-    position: relative;
 }
 
 .hero-text-wrap{
