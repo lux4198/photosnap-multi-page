@@ -1,3 +1,5 @@
+/* home */
+
 const heroTextTile1 = 'Create and share your photo Stories.'
 const heroTextTile2 = 'Beautiful stories every time.'
 const heroTextTile3 = 'Designed for everyone'
@@ -6,12 +8,25 @@ const heroTextDetails1 = 'Photosnap is a platform for photographers and visual s
 const heroTextDetails2 = 'We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone.'
 const heroTextDetails3 = 'Photosnap can help you create stories that resonate with your audience.  Our tool is designed for photographers of all levels, brands, businesses you name it.'
 
-export const ButtonText1 = 'Get an invite'
-export const ButtonText2 = 'View the stories'
-
 export const heroTextTitles = [heroTextTile1, heroTextTile2, heroTextTile3]
 export const heroTextDetails = [heroTextDetails1, heroTextDetails2, heroTextDetails3]
 
+
+/* features */
+
+export const featuresHeroTitle = 'FEATURES'
+export const featuresHeroText = 'We make sure all of our features are designed to be loved by every aspiring and even professional photographers who wanted to share their stories.'
+
+
+/* pricing */
+
+export const pricingHeroTitle = 'PRICING'
+export const pricingHeroText = 'Create your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos.'
+
+/* shared */
+
+export const ButtonText1 = 'Get an invite'
+export const ButtonText2 = 'View the stories'
 
 const infoTextDetail1 = 'No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen.'
 const infoTextDetail2 = 'Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go.'

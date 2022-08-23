@@ -6,10 +6,11 @@ import './features.css'
 /* components */
 
 import InfoCard from '../components/shared/infoCard'
+import BannerBeta from '../components/shared/bannerBeta'
 
 /* text */
 
-import { infoTextDetails, infoTextTitles } from '../assets/text'
+import { infoTextDetails, infoTextTitles, featuresHeroText, featuresHeroTitle } from '../assets/text'
 
 /* images */
 
@@ -23,7 +24,6 @@ import embed from '../assets/features/desktop/embed.svg'
 import dragdrop from '../assets/features/desktop/drag-drop.svg'
 import customdomain from '../assets/features/desktop/custom-domain.svg'
 import boostexposure from '../assets/features/desktop/boost-exposure.svg'
-import { ButtonType2 } from '../components/shared/buttons'
 
 
 const bgImage = () => {
@@ -37,15 +37,12 @@ function Features() {
     return (
         <motion.div  exit = {{opacity : 0}}>
             <div id = 'Features'>
-                <div class = 'features-hero-section' /* class defined in home.css */ >
+                <div class = 'features-hero-section' /* classes defined in home.css / hero-element.css */ >
                     <div class = 'hero-wrap-1' style = {{'backgroundColor' : 'black'}}>
                         <div class = 'hero-text-wrap'>
-                            <h1>FEATURES</h1>
+                            <h1>{featuresHeroTitle}</h1>
                             <p>
-                                We make sure all of our features are designed
-                                to be loved by every aspiring and even
-                                professional photographers who wanted to
-                                share their stories.
+                               {featuresHeroText}
                             </p>
                         </div>
                         <div class = 'hero-image'
@@ -63,10 +60,7 @@ function Features() {
                     <InfoCard infoIcon = {boostexposure} infoTitle = {infoTextTitles[4]} infoDetails = {infoTextDetails[4]}/>
                     <InfoCard infoIcon = {dragdrop} infoTitle = {infoTextTitles[5]} infoDetails = {infoTextDetails[5]}/>
                 </div>
-                <div class = 'banner-beta'>
-                    <h1>WE'RE IN BETA. GET YOUR INVITE TODAY.</h1>
-                    <ButtonType2 text = 'GET AN INVITE' dark = {true}/>
-                </div>
+                <BannerBeta/>
             </div>
         </motion.div>
     )
