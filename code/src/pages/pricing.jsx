@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react'
 
 import { motion } from 'framer-motion'
 import './pricing.css'
@@ -13,6 +14,7 @@ import heroImageMobile from '../assets/pricing/mobile/hero.jpg'
 /* text */
 
 import { pricingHeroTitle, pricingHeroText } from '../assets/text.jsx'
+import BannerBeta from '../components/shared/bannerBeta'
 
 function Pricing() {
 
@@ -23,6 +25,8 @@ function Pricing() {
             (window.innerWidth < 700)? 2 : (window.innerWidth < 1000)? 1 : 0
         )
     }
+
+    const [pricingPlan, setPricingPlan] = useState(true)
 
     return (
         <motion.div  exit = {{opacity : 0}}>
@@ -40,6 +44,25 @@ function Pricing() {
                                         >
                         </div>
                     </div>
+                    <div class = 'pricing-plan-button-wrap'>
+                        <h3 class = {pricingPlan? 'pricing-plan-p' : 'pricing-plan-p-focus'}>
+                            Monthly
+                        </h3>
+                        <div class = {pricingPlan? 'pricing-plan-button-toggle' : 'pricing-plan-button-toggle-focus'} onClick = {() => setPricingPlan(!pricingPlan)}>
+                            <div class = {pricingPlan? 'pricing-plan-button-toggle-inside' : 'pricing-plan-button-toggle-inside-focus'}/>
+                        </div>            
+                        <h3 class = {pricingPlan?  'pricing-plan-p-focus' : 'pricing-plan-p'} >
+                            Yearly
+                        </h3>
+                    </div>
+                    <div class = 'pricing-plans-wrap'>
+                        
+                    </div>
+                    <div class = 'pricing-plans-table'>
+
+                    </div>
+
+                    <BannerBeta/>
                 </div>
         </motion.div>
     )

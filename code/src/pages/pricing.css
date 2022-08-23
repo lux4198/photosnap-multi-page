@@ -1,0 +1,62 @@
+
+
+.pricing-plan-button-wrap{
+    display: flex;
+    margin: auto;
+    width: fit-content;
+    padding: 3em;
+    margin-top: 2em;
+
+}
+
+.pricing-plan-button-wrap h3{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.pricing-plan-p{
+    color: var(--col-main-black);
+}
+
+.pricing-plan-p-focus{
+    color : var(--col-main-lightgrey)
+}
+
+
+.pricing-plan-button-toggle{
+    width: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0.1em 0.3em;
+    background-color: var(--col-main-lightgrey);
+    border-radius: 50px;
+}
+
+
+.pricing-plan-button-toggle-focus{
+    width: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.1em 0.3em;
+    border-radius: 50px;
+    background-color: var(--col-main-black);
+
+}
+
+
+.pricing-plan-button-toggle-inside{
+    background-color: var(--col-main-black);
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+}
+
+.pricing-plan-button-toggle-inside-focus{
+    background-color: var(--col-main-white);
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+}
