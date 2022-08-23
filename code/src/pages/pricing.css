@@ -1,17 +1,17 @@
 
 
-.pricing-plan-button-wrap{
+.pricing-plan-toggle-button-wrap{
     display: flex;
     margin: auto;
     width: fit-content;
-    padding: 3em;
+    padding: 3em 1em;
     margin-top: 2em;
 
 }
 
-.pricing-plan-button-wrap h3{
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+.pricing-plan-toggle-button-wrap h3{
+    padding-left: 1.5em;
+    padding-right: 1.5em;
 }
 
 .pricing-plan-p{
@@ -24,25 +24,28 @@
 
 
 .pricing-plan-button-toggle{
-    width: 40px;
+    width: 60px;
+    height: 30px;
     position: relative;
     display: flex;
     align-items: center;
-    padding: 0.1em 0.3em;
+    padding: 3px;
     background-color: var(--col-main-lightgrey);
     border-radius: 50px;
+    cursor: pointer;
 }
 
 
 .pricing-plan-button-toggle-focus{
-    width: 40px;
+    width: 60px;
+    height: 30px;
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    padding: 0.1em 0.3em;
+    padding: 3px;
     border-radius: 50px;
     background-color: var(--col-main-black);
+    cursor: pointer;
 
 }
 
@@ -50,13 +53,142 @@
 .pricing-plan-button-toggle-inside{
     background-color: var(--col-main-black);
     border-radius: 100%;
-    width: 15px;
-    height: 15px;
+    width: 22px;
+    height: 22px;
+    transition : 200ms all ease-out; 
+    position: absolute; 
+    left : 3px
 }
 
 .pricing-plan-button-toggle-inside-focus{
     background-color: var(--col-main-white);
     border-radius: 100%;
-    width: 15px;
-    height: 15px;
+    width: 22px;
+    height: 22px;
+    position: absolute; 
+    left : 35px; 
+    transition : 200ms all ease-out; 
+}
+
+
+.pricing-plans-wrap{
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pricing-plan-card-wrap{
+    padding: 3em;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+    margin: 1em;
+    height: fit-content;
+}
+
+.pricing-plan-pro{
+    background-color: black;
+    color: white;
+    padding: 5em 3em;
+    position: relative;
+}
+
+.pricing-plan-pro::before{
+    content: '';
+    width: 100%;
+    height: 1%;
+    background: linear-gradient(45deg, var(--col-accent-purple), var(--col-accent-blue));
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.pricing-plan-card-wrap > *{
+    padding: 1rem 0; 
+}
+
+
+.pricing-plan-card-wrap p{
+    color: var(--col-main-lightgrey);
+}
+
+
+.pricing-plan-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.pricing-plan-text > *{
+    padding: 0.5em 0
+}
+
+.pricing-plan-price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-plan-button-wrap{
+    margin: auto;
+}
+
+
+
+@media only screen and (700px < width < 1000px){
+    .pricing-plans-wrap{
+        flex-direction: column;
+    }
+
+    .pricing-plan-card-wrap{
+        width: 80%;
+        padding : 2em; 
+    }
+
+    .pricing-plan-pro::before{
+        left: 0;
+        height: 100%;
+        width: 0.5%;
+    }
+
+    .pricing-plan-text-price-wrap{
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .pricing-plan-text{
+        text-align: left;
+        align-items: flex-start;
+        max-width: 40%;
+    }
+
+    .pricing-plan-price{
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+
+    
+    .pricing-plan-button-wrap{
+        margin: 0;
+        margin-right: auto;
+    }
+
+
+}
+
+
+@media only screen and (max-width : 700px){
+    .pricing-plans-wrap{
+        flex-wrap: wrap;
+    }
 }

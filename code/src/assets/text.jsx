@@ -23,6 +23,10 @@ export const featuresHeroText = 'We make sure all of our features are designed t
 export const pricingHeroTitle = 'PRICING'
 export const pricingHeroText = 'Create your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos.'
 
+export const pricingPlanBasicText = 'Includes basic usage of our platform. Recommended for new and aspiring photographers.'
+export const pricingPlanProText = 'More advanced features available. Recommended for photography veterans and professionals.'
+export const pricingPlanBusinessText = 'Additional features available such as more detailed metrics. Recommended for business owners.'
+
 /* shared */
 
 export const ButtonText1 = 'Get an invite'
