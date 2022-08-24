@@ -4,7 +4,7 @@
 
 ### Links
 
-- [solution](https://www.frontendmentor.io/challenges/photosnap-multipage-website-nMDSrNmNW/hub/photography-page-using-react-m8OuzfOEuZ)
+- [solution](https://www.frontendmentor.io/solutions/photography-page-using-react-m8OuzfOEuZ)
 - [live site](https://glittery-cocada-f721be.netlify.app/)
 
 ## My process
