@@ -1,4 +1,4 @@
-### Image Focused Multi Page Website
+### Image Heavy Multi Page Website
 
 ![](./screenshot1.png)
 
