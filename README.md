@@ -1,6 +1,6 @@
 ### Image Focused Multi Page Website
 
-![](./screenshot.png)
+![](./screenshot1.png)
 
 ### Links
 
