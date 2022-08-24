@@ -10,6 +10,9 @@ import heroImageDesktop from '../assets/pricing/desktop/hero.jpg'
 import heroImageTablet from '../assets/pricing/tablet/hero.jpg'
 import heroImageMobile from '../assets/pricing/mobile/hero.jpg'
 
+import checkIcon from '../assets/pricing/desktop/check.svg'
+
+
 
 /* text */
 
@@ -30,6 +33,12 @@ function Pricing() {
     const [pricingPlan, setPricingPlan] = useState(true)
     const pricingPlansMonthly = ['19.00', '39.00', '99.00']
     const pricingPlansYearly = ['190.00', '390.00', '990.00']
+
+    const pricingPlanBilling = () => {
+        return(
+            pricingPlan? "per month" : "per year"
+        )
+    }
 
     return (
         <motion.div  exit = {{opacity : 0}}>
@@ -68,7 +77,7 @@ function Pricing() {
                         </div>
                         <div class = 'pricing-plan-price'>
                             <h1>${pricingPlan? pricingPlansMonthly[0] : pricingPlansYearly[0]}</h1>
-                            <p>per month</p>
+                            <p>{pricingPlanBilling()}</p>
                         </div>
                     </div>
                     <div class = 'pricing-plan-button-wrap'>
@@ -83,7 +92,7 @@ function Pricing() {
                         </div>
                         <div class = 'pricing-plan-price'>
                             <h1>${pricingPlan? pricingPlansMonthly[1] : pricingPlansYearly[1]}</h1>
-                            <p>per month</p>
+                            <p>{pricingPlanBilling()}</p>
                         </div>
                     </div>
                     <div class = 'pricing-plan-button-wrap'>
@@ -98,7 +107,7 @@ function Pricing() {
                         </div>
                         <div class = 'pricing-plan-price'>
                             <h1>${pricingPlan? pricingPlansMonthly[2] : pricingPlansYearly[2]}</h1>
-                            <p>per month</p>
+                            <p>{pricingPlanBilling()}</p>
                         </div>
                     </div>
                     <div class = 'pricing-plan-button-wrap'>
@@ -107,7 +116,173 @@ function Pricing() {
                 </div>
             </div>
             <div class = 'pricing-plans-table'>
+                <table cellSpacing={0}>
+                    <thead>
+                        <th colSpan={(window.innerWidth > 700)? '1' : '3'}>
+                            <h4>The Features</h4>
+                        </th>
+                        <th>
+                            <h4 class = 'pricing-table-plan-head'>Basic</h4>
+                        </th>
+                        <th>
+                            <h4 class = 'pricing-table-plan-head'>Professional</h4>
+                        </th>
+                        <th>
+                            <h4 class = 'pricing-table-plan-head'>Business</h4>
+                        </th>
+                    </thead>
+                        <tr class = 'pricing-table-feature-mobile'>
+                            <td colSpan= '3'>
+                                <h4>Unlimited Story Posting</h4>
+                            </td>
+                        </tr>
+                        <tr class = 'pricing-table-plans-mobile'>
+                            <td><h4>Basic</h4></td>
+                            <td><h4>Pro</h4></td>
+                            <td><h4>Business</h4></td>
+                        </tr>
+                        <tr>
+                            <td class = 'pricing-table-feature-desktop'>
+                                <h4>Unlimited Story Posting</h4>
+                            </td>
+                            <td><img src={checkIcon} alt="checkicon"/></td>
+                            <td><img src={checkIcon} alt="checkicon"/></td>
+                            <td><img src={checkIcon} alt="checkicon"/></td>
+                        </tr>
 
+                        <tr class = 'pricing-table-feature-mobile'>
+                            <td colSpan={'3'}>
+                                <h4>Unlimited Photo Upload</h4>
+                            </td>
+                        </tr>
+                        <tr class = 'pricing-table-plans-mobile'>
+                            <td><h4>Basic</h4></td>
+                            <td><h4>Pro</h4></td>
+                            <td><h4>Business</h4></td>
+                        </tr>
+                        <tr>
+                            <td class = 'pricing-table-feature-desktop'>
+                                <h4>Unlimited Photo Upload</h4>
+                            </td>
+                            <td><img src={checkIcon} alt="checkicon"/></td>
+                            <td><img src={checkIcon} alt="checkicon"/></td>
+                            <td><img src={checkIcon} alt="checkicon"/></td>
+                        </tr>
+
+                        <tr class = 'pricing-table-feature-mobile'>
+                            <td colSpan={'3'}>
+                                <h4>Embedding Custom Content</h4>
+                            </td>
+                        </tr>
+                        <tr class = 'pricing-table-plans-mobile'>
+                            <td><h4>Basic</h4></td>
+                            <td><h4>Pro</h4></td>
+                            <td><h4>Business</h4></td>
+                        </tr>
+                        <tr>
+                            <td class = 'pricing-table-feature-desktop'>
+                                <h4>Embedding Custom Content</h4>
+                            </td>
+                            <td></td>
+                            <td><img src={checkIcon} alt="checkicon"/></td>
+                            <td><img src={checkIcon} alt="checkicon"/></td>
+                        </tr>
+
+                        <tr class = 'pricing-table-feature-mobile'>
+                            <td colSpan={'3'}>
+                                <h4>Customize Metadata</h4>
+                            </td>
+                        </tr>
+                        <tr class = 'pricing-table-plans-mobile'>
+                            <td><h4>Basic</h4></td>
+                            <td><h4>Pro</h4></td>
+                            <td><h4>Business</h4></td>
+                        </tr>
+                        <tr>
+                            <td class = 'pricing-table-feature-desktop'>
+                                <h4>Customize Metadata</h4>
+                            </td>
+                            <td></td>
+                            <td><img src={checkIcon} alt="checkicon"/></td>
+                            <td><img src={checkIcon} alt="checkicon"/></td>
+                        </tr>
+
+                        <tr class = 'pricing-table-feature-mobile'>
+                            <td colSpan={'3'}>
+                                <h4>Advanced Metrics</h4>
+                            </td>
+                        </tr>
+                        <tr class = 'pricing-table-plans-mobile'>
+                            <td><h4>Basic</h4></td>
+                            <td><h4>Pro</h4></td>
+                            <td><h4>Business</h4></td>
+                        </tr>
+                        <tr>
+                            <td class = 'pricing-table-feature-desktop'>
+                                <h4>Advanced Metrics</h4>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td><img src={checkIcon} alt="checkicon"/></td>
+                        </tr>
+
+                        <tr class = 'pricing-table-feature-mobile'>
+                            <td colSpan={'3'}>
+                                <h4>Photo Downloads</h4>
+                            </td>
+                        </tr>
+                        <tr class = 'pricing-table-plans-mobile'>
+                            <td><h4>Basic</h4></td>
+                            <td><h4>Pro</h4></td>
+                            <td><h4>Business</h4></td>
+                        </tr>
+                        <tr>
+                            <td class = 'pricing-table-feature-desktop'>
+                                <h4>Photo Downloads</h4>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td><img src={checkIcon} alt="checkicon"/></td>
+                        </tr>
+
+                        <tr class = 'pricing-table-feature-mobile'>
+                            <td colSpan={'3'}>
+                                <h4>Search Engine Indexing</h4>
+                            </td>
+                        </tr>
+                        <tr class = 'pricing-table-plans-mobile'>
+                            <td><h4>Basic</h4></td>
+                            <td><h4>Pro</h4></td>
+                            <td><h4>Business</h4></td>
+                        </tr>
+                        <tr>
+                            <td class = 'pricing-table-feature-desktop'>
+                                <h4>Search Engine Indexing</h4>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td><img src={checkIcon} alt="checkicon"/></td>
+                        </tr>
+
+                        <tr class = 'pricing-table-feature-mobile'>
+                            <td colSpan={'3'}>
+                                <h4>Custom Analytics</h4>
+                            </td>
+                        </tr>
+                        <tr class = 'pricing-table-plans-mobile'>
+                            <td><h4>Basic</h4></td>
+                            <td><h4>Pro</h4></td>
+                            <td><h4>Business</h4></td>
+                        </tr>
+                        <tr>
+                            <td class = 'pricing-table-feature-desktop'>
+                                <h4>Custom Analytics</h4>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td><img src={checkIcon} alt="checkicon"/></td>
+                        </tr>
+                </table>
             </div>
 
             <BannerBeta/>
